@@ -1,0 +1,46 @@
+{
+  "name": "react-sharpie",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A react library that can be used to highlight and comment parts of a given text. The highlits and comments are both configurable in order to blend with the user's design and needs",
+  "author": "Neocoast",
+  "license": "ISC",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "build": "rollup -c",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "date-fns": "^2.28.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@types/react": "^17.0.41",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^3.10.0",
+    "typescript": "^4.6.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build": "build-storybook",
+    "lint": "eslint --fix . && npx stylelint --fix **/*.scss"
+  }
+}
