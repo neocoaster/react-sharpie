@@ -93,6 +93,7 @@ const HighlatableText = ({
       selection: text.substring(Math.min(...starts), Math.max(...ends)),
       style: 'background: yellow;',
     };
+    
     setHighlights([...nonOverlapingHighlight(newhighlight), newhighlight]);
   };
 
