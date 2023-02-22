@@ -117,6 +117,7 @@ const HighlatableText = ({
 
   const mouseOverHandle = () => {
     const selection = window.getSelection();
+    
     if (selection) {
       const fst = selection.anchorOffset;
       const snd = selection.focusOffset;
