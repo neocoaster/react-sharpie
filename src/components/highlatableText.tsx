@@ -130,6 +130,7 @@ const HighlatableText = ({
           style: 'background: yellow;',
         };
         const overlap = overlapingHighlight(newhighlight);
+        
         if (overlap.length > 0) {
           overlapHandler(newhighlight, overlap);
         } else {
